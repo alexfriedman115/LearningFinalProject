@@ -1,4 +1,4 @@
-package lab5test;
+package finalProject;
 
 import engine.display.Game;
 import engine.display.SoundManager;
@@ -10,7 +10,7 @@ import java.util.ArrayList;
  * Example game that utilizes our engine. We can create a simple prototype game with just a couple lines of code
  * although, for now, it won't be a very fun game :)
  * */
-public class LabFiveGame extends Game{
+public class FinalProject extends Game{
 
 //	static /* Create a sprite object for our game. We'll use mario */
 //	AnimatedSprite mario = new AnimatedSprite("Mario", "Mario.png", new Point(0,0));
@@ -22,8 +22,8 @@ public class LabFiveGame extends Game{
 	/**
 	 * Constructor. See constructor in Game.java for details on the parameters given
 	 * */
-	public LabFiveGame() {
-		super("Lab Five Test Game", 1400, 800);
+	public FinalProject() {
+		super("Final Project Game", 1400, 800);
 	}
 	
 	/**
@@ -81,7 +81,7 @@ public class LabFiveGame extends Game{
 	 * @throws IOException 
 	 * */
 	public static void main(String[] args) throws IOException {
-		LabFiveGame game = new LabFiveGame();
+		FinalProject game = new FinalProject();
 		
 		/*TODO: 
 			- change collides with or box for rotation
