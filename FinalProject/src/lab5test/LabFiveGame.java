@@ -16,6 +16,7 @@ public class LabFiveGame extends Game{
 //	AnimatedSprite mario = new AnimatedSprite("Mario", "Mario.png", new Point(0,0));
 	
 	static SoundManager sound = new SoundManager();
+	@SuppressWarnings("unused")
 	private boolean hitBox = false;
 
 	/**

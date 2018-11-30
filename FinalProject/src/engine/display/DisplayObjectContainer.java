@@ -1,13 +1,13 @@
 package engine.display;
 
 import java.awt.*;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class DisplayObjectContainer extends DisplayObject{
 
     private ArrayList<DisplayObject> children;
-    private String id;
+    @SuppressWarnings("unused")
+	private String id;
 
 
     public DisplayObjectContainer(String ID){
