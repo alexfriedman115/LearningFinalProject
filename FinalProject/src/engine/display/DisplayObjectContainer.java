@@ -90,11 +90,11 @@ public class DisplayObjectContainer extends DisplayObject{
     }
 
     @Override
-    public void update(ArrayList<Integer> pressedKeys){
-        super.update(pressedKeys);
+    public void update(ArrayList<Integer> pressedKeys, ArrayList<Integer> pressedMouse){
+        super.update(pressedKeys, pressedMouse);
 
             for(int i=0; i<this.children.size(); i++){
-                getChildAtIndex(i).update(pressedKeys);
+                getChildAtIndex(i).update(pressedKeys, pressedMouse);
             }
 
     }

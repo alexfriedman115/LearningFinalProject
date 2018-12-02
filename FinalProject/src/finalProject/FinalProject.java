@@ -5,6 +5,7 @@ import engine.display.SoundManager;
 import java.awt.*;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.awt.MouseInfo;
 
 /**
  * Example game that utilizes our engine. We can create a simple prototype game with just a couple lines of code
@@ -31,8 +32,18 @@ public class FinalProject extends Game{
 	 * the set of keys (as strings) that are currently being pressed down
 	 * */
 	@Override
-	public void update(ArrayList<Integer> pressedKeys){
-		super.update(pressedKeys);
+	public void update(ArrayList<Integer> pressedKeys, ArrayList<Integer> pressedMouse){
+		super.update(pressedKeys, pressedMouse);
+		
+		Point p = MouseInfo.getPointerInfo().getLocation();
+		//System.out.println("Mouse position: x = " + p.x + " y = " + p.y);
+		
+		if (pressedMouse.contains(1))
+		{
+			//System.out.println("mouse pressed yeet");
+			// this is where mouse down feature will go
+		}
+		
 		//mario.setPlaying(false);
 
 		/* Make sure mario is not null. Sometimes Swing can auto cause an extra frame to go before everything is initialized */

@@ -190,7 +190,7 @@ public class DisplayObject {
 	 * objects state before the draw occurs. Should be overridden if necessary
 	 * to update objects appropriately.
 	 * */
-	protected void update(ArrayList<Integer> pressedKeys) {
+	protected void update(ArrayList<Integer> pressedKeys, ArrayList<Integer> pressedMouse) {
 
 	}
 
